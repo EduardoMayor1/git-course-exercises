@@ -1,0 +1,150 @@
+// initializes a git repository in the current directory with all its content
+git init
+
+// perminantly stores current snapshot to the repository
+// initial commit is the name and shoud be meaningful depending on what it represents
+// after a commit the staging area will not be cleared
+git commit -m "initial commit"
+
+
+// removes the file from the staging area 
+git add filename
+
+
+// shows files added to the staging area 
+// and any changes that are ready to be commited are shown in green
+git status
+
+
+// shows all files in the staging area
+git ls-files
+
+// when using git commands on a files, if the ifle has spaces in the name use "" otherwise you dont need any quotes
+
+
+//removes the file from the staging area and working directory
+git rm "filename"
+
+
+
+// changes the name of the file and even the file type
+git mv "filename" newfilename
+
+
+
+// lets a file ignore git
+// if the file has already been commited or is in the staging area, this will not work
+git add .gitignore
+
+
+
+// lets you open and edit the file you choose
+// it will open whatever you have your default editor set to
+code filename
+
+
+// makes vscode default diff tool
+git config -- global diff.tool vscode
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+
+
+// lets you see changed made in the staging area
+git difftool --staged
+
+
+// shows all commits made from top to bottom sorted by most recent
+git log
+
+
+
+// shows all the files and the commits made
+git ls-tree
+
+
+// switches to the branch you choose
+// -c creates the branch if it doesnt exist already
+git switch -c 'branchname'
+
+
+// merges the branch that is selected into the current branch you are on 
+git merge 'branchname'
+
+
+
+// compares the staging area and the working directory
+git diff
+
+
+//shows all differences unstaged or staged in the working directory
+git diff HEAD
+
+
+//shows the differences in the staging area
+git diff staged
+
+
+//shows the differences between the two branches that you choose
+git diff branch1..branch2
+
+
+//shows the differences between two commits
+//you need to use the commit hash for both commits
+git diff commit1..commit2
+
+
+// saves changes you made on a branch without commiting
+//this allows you to switch to another branch without having to commit the changes  
+// it saves all staged and unstaged changes and stashes them
+git stash
+
+
+// removes the most recently stashed changes and applies them to your current working copy
+git stash pop
+
+
+// takes whatever changes are stashed and applies them to the current working copy
+// unlike pop it keeps the changes stashed incase you want to re-apply the changes elsewhere   
+git stash apply
+
+
+// deletes everything that is stashed
+// only used if you use stash apply since stash pop already clears the stash
+git stash drop stash-id
+
+
+//deletes everything that is stashed 
+git stash clear
+
+
+// shows a list of everything that is stashed along with the stash-id
+git stash list
+
+
+// lets you go back to a previous commit
+// puts you in detached head 
+git checkout commit-hash
+
+
+// removes whatever file you want from the staging area 
+// the file wont be included in your next commit 
+git restore --staged 'file name'
+
+
+// resets a repository back to a specific commit
+git reset commit-hash
+
+
+// will undo the commit and the changed to the file
+git reset --hard commit-hash
+
+
+// creates a new commit which will undo the changes from a commit
+// using reset completely removes the commit
+git revert commit-hash 
+
+
+
+// clones and creates a git repository on your system with all directories and files
+git clone repository-url
+
+

@@ -1,0 +1,40 @@
+// prints the current directory
+pwd
+
+// changes the direcotry into another file or folder within the current directory
+cd filename
+
+// shows all directories withing current directory
+ls 
+
+// goes backwards in the directory by one
+cd ..
+
+// clears all terminal inputs 
+// this wont have any affect on the directory it is just to clear the terminal if it is cluttered
+clear
+cmd k <-- keyboard shortcut to cleat the terminal
+
+// changes directory to the default users/username 
+cd ~
+
+// creates a new file
+touch filename
+
+// opens the file that is typed in
+open filename
+
+//opens the file and lets you edit it through the terminal
+// at the bottom of the terminal it will show commands that can be used in nano
+nano filename
+
+// deletes the file that is typed
+//RM DELETES COMPLETELY IT DOES NOT SEND ITEM TO THE TRASH BIN
+rm filename
+
+//creates a new directory
+mkdir directoryname
+
+// deletes the directory and all its contents
+//RM DELETES COMPLETELY IT DOES NOT SEND ITEM TO THE TRASH BIN
+rm -r directoryname
