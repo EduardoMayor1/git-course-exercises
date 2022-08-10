@@ -150,3 +150,9 @@ git clone repository-url
 git hub has a list of commands that show how to push a repository up to github
 
 
+// creates a local branch from the remote branch of the  same name
+git switch remote-branch-name 
+
+
+// pulls any changes from github without affecting any of your own commits or changes
+git fetch origin master
