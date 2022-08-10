@@ -148,3 +148,4 @@ git revert commit-hash
 git clone repository-url
 
 
+git hub has a list of commands that show how to push a repository up to github
