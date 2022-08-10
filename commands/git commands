@@ -143,9 +143,10 @@ git reset --hard commit-hash
 git revert commit-hash 
 
 
-
 // clones and creates a git repository on your system with all directories and files
 git clone repository-url
 
 
 git hub has a list of commands that show how to push a repository up to github
+
+
