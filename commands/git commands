@@ -165,8 +165,12 @@ git fetch origin master
 git pull
 
 
-
 // public repositories can be cloned and viewed by anyone on github 
 // public repositories cannot be changed unless they are collaborators
 // private repositories cannot be seen by anyone on github and can only be changed by people who are collaborators
+
+
+// github repositories can include a README file that you can edit to describe what your repository does
+//README.md
+
 
