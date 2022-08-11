@@ -155,4 +155,18 @@ git switch remote-branch-name
 
 
 // pulls any changes from github without affecting any of your own commits or changes
+// pulls can result in merge conflicts
 git fetch origin master
+
+
+// pulls all changes from github 
+// defaults to origin
+// you can pull individual branches if needed
+git pull
+
+
+
+// public repositories can be cloned and viewed by anyone on github 
+// public repositories cannot be changed unless they are collaborators
+// private repositories cannot be seen by anyone on github and can only be changed by people who are collaborators
+
