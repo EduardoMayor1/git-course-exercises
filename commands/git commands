@@ -174,3 +174,11 @@ git pull
 //README.md
 
 
+pull requests are requests that have to be verified before being merged on github
+it is used to check files and branches and make sure they are good before merging them into the master branch
+
+
+// rebasing is the process of moving or combining commits to a new base commit
+// it is mostly used in the context of a feature branch
+
+
