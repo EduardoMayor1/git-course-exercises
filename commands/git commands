@@ -182,6 +182,8 @@ it is used to check files and branches and make sure they are good before mergin
 // it is mostly used in the context of a feature branch
 
 
-// will display a list of previous commits on the default text editor 
+// will display a list of previous commits that havent been pushed
 //can be used to change the commit message
 git rebase -i HEAD~n
+
+
